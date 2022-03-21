@@ -1,0 +1,25 @@
+h1, h2, h3 {color: #FE7B5B}
+
+* {font-family: 'Arial', monospace;}
+
+fieldset {background-color: #DAE9E9}
+body {
+  background-color: #E3F3F3;
+}
+
+#unico{background-color: azure;}
+
+a:link{color: blue;}
+
+a:visited {color: #099090;}
+
+a:hover{color: #FFB600;}
+
+a:after{color: #FFB600;}
+
+a:active{color: red;}
+
+
+
+}
+
