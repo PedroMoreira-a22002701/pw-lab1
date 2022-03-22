@@ -1,0 +1,87 @@
+* {font-family: 'Arial', monospace;}
+* {box-sizing: border-box;}
+
+.capitais {
+    display: flex;
+    background-color: rgb(238, 248, 248);
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.capitais > div {
+
+
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+
+}
+
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    display: inline-block;
+    flex-flow: row wrap;
+}
+
+.capitais div div:last-child {
+
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: inline-block;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    }
+
+.menu a:last-child {
+    margin-left: auto;
+}
+
+a {
+    padding: 20px;
+    background: #D1DAE8;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: lightgray;
+    font-weight: bold;
+}
+b {
+    display: flex;
+    padding: 100px;
+    background-image: url("images/background.jpg");
+    align-items: center;
+    font-size: 50px;
+    justify-content: center;
+    background-position: center;
+}
+.dicas {
+    display: flex;
+    background-color: rgb(238, 248, 248);
+    flex-flow: row wrap;
+
+}
+.dicas div{
+
+    width: 500px;
+    height: 350px;
+    padding: 10px 20px;
+    background-color: white;
+    justify-content: space-around;
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px #888888;
+}
+
