@@ -49,7 +49,7 @@
 
 a {
     padding: 20px;
-    background: #D1DAE8;
+    
     text-decoration: none;
     color: black;
 }
@@ -138,7 +138,7 @@ b {
 {
    .destinos{
         grid-template-columns: 0.2fr 0.2fr;
-   
+
     grid-template-areas:
         'almada setubal'
         'bragança braga'
