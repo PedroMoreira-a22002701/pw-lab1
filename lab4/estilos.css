@@ -86,13 +86,9 @@ b {
 }
 .destinos {
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr;
-
-    grid-template-areas:
-        'almada setubal bragança'
-        'evora evora braga';
     background-color: rgb(238, 248, 248);
     color: white;
+    gap: 20px
 }
 .destinos div{
     width: 500px;
@@ -119,7 +115,7 @@ b {
 }
 .destinos div.Evora{
     background-image: url("images/evora.jpg");
-    width: 1000px;
+    width: 1020px;
     height: 350px;
     grid-area: evora;
 }
@@ -127,6 +123,27 @@ b {
     background-image: url("images/braga.jpg");
 
     grid-area: braga;
+}
+@media (min-width: 901px)
+{
+.destinos {
+    grid-template-columns: 0.2fr 0.2fr;
+
+    grid-template-areas:
+        'almada setubal bragança'
+        'evora evora braga';
+    }
+}
+@media (max-width: 900px)
+{
+   .destinos{
+        grid-template-columns: 0.2fr 0.2fr;
+   
+    grid-template-areas:
+        'almada setubal'
+        'bragança braga'
+        'evora evora';
+    }
 }
 
 
