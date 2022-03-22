@@ -1,0 +1,16 @@
+* {font-family: 'Arial', monospace;}
+* {box-sizing: border-box;}
+
+* {background-color: #FADADA;}
+
+.header{grid-area: header;}
+.menu{grid-area: menu;}
+.footer{grid-area: footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'menu menu menu'
+        'footer footer footer';
+}
