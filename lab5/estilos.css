@@ -1,0 +1,265 @@
+* {font-family: 'Arial', monospace;}
+* {box-sizing: border-box;}
+
+.HeroImage {
+  display: grid;
+  height: 90vh;
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.capitais {
+    display: flex;
+    background-color: rgb(238, 248, 248);
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+.parallax{
+    /* The image used */
+  background-image: url("images/parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.capitais > div {
+
+
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+
+}
+
+
+
+.capitais div div:last-child {
+
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: inline-block;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    }
+
+.menu a:last-child {
+    margin-left: auto;
+}
+
+a {
+    padding: 20px;
+    
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: lightgray;
+    font-weight: bold;
+}
+b {
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    background-position: center;
+}
+.dicas {
+    display: flex;
+    background-color: rgb(238, 248, 248);
+    flex-flow: row wrap;
+
+}
+.dicas div{
+
+    width: 500px;
+    height: 350px;
+    padding: 10px 20px;
+    background-color: white;
+    justify-content: space-around;
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px #888888;
+}
+.destinos {
+    display: grid;
+
+    color: white;
+    gap: 20px
+}
+.destinos div{
+    width: 500px;
+    height: 350px;
+    padding: 10px 20px;
+    background-color: white;
+    font-size: 50px;
+
+}
+.destinos div.Almada{
+    background-image: url("images/almada.jpg");
+
+    grid-area: almada;
+}
+.destinos div.Setubal{
+    background-image: url("images/setubal.jpg");
+
+    grid-area: setubal;
+}
+.destinos div.Bragança{
+    background-image: url("images/bragança.jpg");
+
+    grid-area: bragança;
+}
+.destinos div.Evora{
+    background-image: url("images/evora.jpg");
+    width: 1020px;
+    height: 350px;
+    grid-area: evora;
+}
+.destinos div.Braga{
+    background-image: url("images/braga.jpg");
+
+    grid-area: braga;
+}
+.fotos {
+    display: grid;
+    margin: 0 10vw;
+    
+}
+.fotos > div > img {
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+    padding: 20px;
+    
+
+}
+.fotos > div >img:hover {
+    opacity: 0.5;
+}
+
+.fotos:hover div.London{
+    opacity: 0;
+}
+.fotos:hover div.Paris{
+    opacity: 0;
+}
+.fotos:hover div.Lisbon{
+    opacity: 0;
+}
+.fotos:hover div.Madrid{
+    opacity: 0;
+}
+.fotos:hover div.Bern{
+    opacity: 0;
+}
+.fotos:hover div.Rome{
+    opacity: 0;
+}
+.fotos:hover div.Viena{
+    opacity: 0;
+}
+.fotos:hover div.Bruxels{
+    opacity: 0;
+}
+.fotos:hover div.Amsterdan{
+    opacity: 0;
+}
+.fotos:hover div.Berlin{
+    opacity: 0;
+}
+.fotos:hover div.Kiev{
+    opacity: 0;
+}
+.fotos:hover div.Copenham{
+    opacity: 0;
+}
+.animation {
+    position: relative;
+    text-align: center;
+    width: 100px; height: 100px;
+    animation-name: ani;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+        
+}
+.animation > a:hover {
+   background-color: transparent;
+}
+@keyframes ani {
+    0% {background-color:blue; left:0px; top:0px;}
+    25% {background-color:aqua; left:2400px; top:0px;}
+    50% {background-color:blue; left:2400px; top:0px;}
+    75% {background-color:aqua; left:0px; top:0px;}
+    100% {background-color:blue; left:0px; top:0px;}
+    }
+
+@media (min-width: 901px)
+{
+.destinos {
+    grid-template-columns: 0.2fr 0.2fr;
+    
+    grid-template-areas:
+        'almada setubal bragança'
+        'evora evora braga';
+    }
+    .fotos  {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 300px;
+       
+    }
+}
+
+@media (max-width: 900px)
+{
+   .destinos{
+        grid-template-columns: 0.2fr 0.2fr;
+
+    grid-template-areas:
+        'almada setubal'
+        'bragança braga'
+        'evora evora';
+    }
+    .fotos{
+        grid-template-columns: 2fr 1fr;
+
+    }
+}
+@media (max-width: 600px)
+{
+   
+    .fotos{
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+
+
+
+
+
